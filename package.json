@@ -1,40 +1,24 @@
 {
-  "private": true,
+  "name": "next-realworld-example-app",
+  "version": "1.0.0",
+  "author": "reck1ess",
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "lazysizes": "^5.2.2",
+    "marked": "^1.1.1",
+    "next": "^9.5.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "swr": "^0.3.0"
   },
   "devDependencies": {
-    "@turbo/gen": "^1.9.7",
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
-    "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "packageManager": "pnpm@7.15.0",
-  "name": "monorepo-study",
-  "turbo": {
-    "npmClient": "pnpm",
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "dist/**",
-          ".next/**"
-        ]
-      },
-      "deploy": {
-        "dependsOn": [
-          "build"
-        ]
-      },
-      "dev": {
-        "cache": false
-      }
-    }
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.44",
+    "typescript": "^3.9.7"
   }
 }
