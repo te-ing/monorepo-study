@@ -2,7 +2,7 @@
 
 import { add } from "math-helpers";
 import { useState } from "react";
-import { Button, Header } from "ui";
+import { Button, Header } from "ui"
 
 export default function Page() {
   const [number, setNumber] = useState(1)

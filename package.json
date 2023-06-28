@@ -14,5 +14,27 @@
     "turbo": "latest"
   },
   "packageManager": "pnpm@7.15.0",
-  "name": "monorepo-study"
+  "name": "monorepo-study",
+  "turbo": {
+    "npmClient": "pnpm",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "dist/**",
+          ".next/**"
+        ]
+      },
+      "deploy": {
+        "dependsOn": [
+          "build"
+        ]
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  }
 }
