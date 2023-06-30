@@ -5,13 +5,10 @@ importers:
   .:
     specifiers:
       '@turbo/gen': ^1.9.7
-      axios: ^1.4.0
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
       prettier: ^2.5.1
       turbo: latest
-    dependencies:
-      axios: 1.4.0
     devDependencies:
       '@turbo/gen': 1.9.7_eusldyghqqa7ybpza2tam24c3e
       eslint: 7.32.0
@@ -48,24 +45,26 @@ importers:
     specifiers:
       '@types/node': ^14.0.27
       '@types/react': ^16.9.44
+      axios: 1.2.2
       lazysizes: ^5.2.2
       marked: ^1.1.1
       next: ^9.5.1
       react: 16.13.1
       react-dom: 16.13.1
       swr: ^0.3.0
-      typescript: ^3.9.7
+      typescript: 5.1.6
     dependencies:
+      axios: 1.2.2
       lazysizes: 5.3.2
       marked: 1.2.9
-      next: 9.5.5_v2wth7qgasonhtd7vq4zr3hyqa
+      next: 9.5.5_emp47fafrq5bpuwmyspvwwoks4
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
       swr: 0.3.11_react@16.13.1
     devDependencies:
       '@types/node': 14.18.52
       '@types/react': 16.14.43
-      typescript: 3.9.10
+      typescript: 5.1.6
 
   packages/eslint-config-custom:
     specifiers:
@@ -2356,8 +2355,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /axios/1.4.0:
-    resolution: {integrity: sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==}
+  /axios/1.2.2:
+    resolution: {integrity: sha512-bz/J4gS2S3I7mpN/YZfGFTqhXTYzRho8Ay38w2otuuDR322KzFIWm/4W2K6gIwvWaws5n+mnb7D1lN9uD+QH6Q==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
@@ -5766,7 +5765,7 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /next/9.5.5_v2wth7qgasonhtd7vq4zr3hyqa:
+  /next/9.5.5_emp47fafrq5bpuwmyspvwwoks4:
     resolution: {integrity: sha512-KF4MIdTYeI6YIGODNw27w9HGzCll4CXbUpkP6MNvyoHlpsunx8ybkQHm/hYa7lWMozmsn58LwaXJOhe4bSrI0g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -5816,7 +5815,7 @@ packages:
       neo-async: 2.6.1
       node-html-parser: 1.4.9
       path-browserify: 1.0.1
-      pnp-webpack-plugin: 1.6.4_typescript@3.9.10
+      pnp-webpack-plugin: 1.6.4_typescript@5.1.6
       postcss: 7.0.32
       process: 0.11.10
       prop-types: 15.7.2
@@ -6309,11 +6308,11 @@ packages:
     resolution: {integrity: sha512-VJK1SRmXBpjwsB4YOHYSturx48rLKMzHgCqDH2ZDa6ZbMS/N5huoNqyQdK5Fj/xayu3fqbXckn5SeCS1EbMDZg==}
     dev: false
 
-  /pnp-webpack-plugin/1.6.4_typescript@3.9.10:
+  /pnp-webpack-plugin/1.6.4_typescript@5.1.6:
     resolution: {integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==}
     engines: {node: '>=6'}
     dependencies:
-      ts-pnp: 1.2.0_typescript@3.9.10
+      ts-pnp: 1.2.0_typescript@5.1.6
     transitivePeerDependencies:
       - typescript
     dev: false
@@ -7609,7 +7608,7 @@ packages:
       yn: 3.1.1
     dev: true
 
-  /ts-pnp/1.2.0_typescript@3.9.10:
+  /ts-pnp/1.2.0_typescript@5.1.6:
     resolution: {integrity: sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==}
     engines: {node: '>=6'}
     peerDependencies:
@@ -7618,7 +7617,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      typescript: 3.9.10
+      typescript: 5.1.6
     dev: false
 
   /tsconfig-paths/3.14.2:
@@ -7751,14 +7750,10 @@ packages:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
     dev: false
 
-  /typescript/3.9.10:
-    resolution: {integrity: sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
-
   /typescript/4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /typescript/5.0.4:
@@ -7771,7 +7766,6 @@ packages:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /uglify-js/3.17.4:
     resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}

@@ -17,8 +17,5 @@
     "node": ">=16.0.0 <17.0.0"
   },
   "packageManager": "pnpm@7.15.0",
-  "name": "realworld",
-  "dependencies": {
-    "axios": "^1.4.0"
-  }
+  "name": "realworld"
 }

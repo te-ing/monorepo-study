@@ -9,7 +9,7 @@ const ErrorMessage = ({ message }: ErrorMessageProps) => (
     <div className="error-container">
       <div className="error-content">{message}</div>
     </div>
-    <style jsx>
+    <style>
       {`
         .error-container {
           display: flex;
